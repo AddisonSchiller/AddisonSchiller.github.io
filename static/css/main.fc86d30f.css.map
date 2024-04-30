@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.fc86d30f.css","mappings":"AAAA,MACI,gBAAiB,CACjB,WACJ,CAEA,MACI,gBACJ","sources":["styles.css"],"sourcesContent":["td, th {\n    border: 1px solid;\n    padding: 4px;\n}\n\ntable {\n    border-spacing: 0;\n}"],"names":[],"sourceRoot":""}

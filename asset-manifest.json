@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/schemadiff/static/css/main.fc86d30f.css",
+    "main.js": "/schemadiff/static/js/main.d2fb8bb0.js",
+    "index.html": "/schemadiff/index.html",
+    "main.fc86d30f.css.map": "/schemadiff/static/css/main.fc86d30f.css.map",
+    "main.d2fb8bb0.js.map": "/schemadiff/static/js/main.d2fb8bb0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fc86d30f.css",
+    "static/js/main.d2fb8bb0.js"
+  ]
+}
