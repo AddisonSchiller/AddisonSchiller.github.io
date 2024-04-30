@@ -11,61 +11,6 @@
     jsonpointer "^5.0.0"
     leven "^3.1.0"
 
-"@axon/log@*":
-  version "1.1.4"
-  resolved "https://nexus.taservs.net/repository/npm-all/@axon/log/-/log-1.1.4.tgz#b56184fc9412db25527016a5f413455dbad8b059"
-  integrity sha512-dfC6cXqr4v4JkTJcSRpl1m9JUEhWuS46OBDR/8FiiNtDwi0fwGBhdR+xa2tgJBTmhG0gm9upWAJ6JwqNuQ4vNA==
-  dependencies:
-    mixpanel-browser "2.25.0"
-    raven-js "3.27.0"
-
-"@axon/log@1.1.5-43175.0":
-  version "1.1.5-43175.0"
-  resolved "https://nexus.taservs.net/repository/npm-all/@axon/log/-/log-1.1.5-43175.0.tgz#a5dc7f2ffb1968c3827f9c5b4acd2642afd7f355"
-  integrity sha512-okzrdaPCNj+JzxnAFxgd5UNaIar1GtjLh+aK1Ns9+b5v50D0yTY5iu+78Xz3+1gus+uX4sbIzUA3LnKEW3yY5g==
-  dependencies:
-    "@axon/track" "1.2.74530"
-    raven-js "3.27.2"
-
-"@axon/schemautils@^3.1.1-59655.0":
-  version "3.1.1-59655.0"
-  resolved "https://nexus.taservs.net/repository/npm-all/@axon/schemautils/-/schemautils-3.1.1-59655.0.tgz#ae4c11c1a8adf0570fb75e220a75687ac1ca5fc1"
-  integrity sha512-E4B/AtnqAxoraj30HZ0rRfr+yCVzsdY7YxsDXezMNpNzMrkbHjtauYL5EJunlteAt4G/AnBhm0rQLHaylY9pLQ==
-  dependencies:
-    "@axon/log" "*"
-    "@axon/validator" "1.0.1-59655.0"
-    "@types/fast-json-stable-stringify" "2.0.0"
-    "@types/react" "16.9.16"
-    fast-json-stable-stringify "2.0.0"
-    normalizr "3.3.0"
-    type-fest "0.8.1"
-    uuid "3.3.3"
-
-"@axon/track@1.2.74530":
-  version "1.2.74530"
-  resolved "https://nexus.taservs.net/repository/npm-all/@axon/track/-/track-1.2.74530.tgz#73c421a19ea8635e2c99f1b48c1e6cc0a2df6c03"
-  integrity sha512-x/eqW5A/DyJe2DRgEwdfzqMfyvM/A3Ib2ONmuo3MYgLBzQn89S63J2RbEy0rB+2yVRMHogijN2cUU9MxcxbbXQ==
-  dependencies:
-    "@types/mixpanel-browser" "^2.35.4"
-    bowser "^2.9.0"
-    mixpanel-browser "^2.35.4"
-
-"@axon/validator@1.0.1-59655.0":
-  version "1.0.1-59655.0"
-  resolved "https://nexus.taservs.net/repository/npm-all/@axon/validator/-/validator-1.0.1-59655.0.tgz#fcde09e2c957ae0cbd34e5c0b88100ddae8247ff"
-  integrity sha512-k83NXRhy7Ied5vbajtGpOMZxycTPIyNvr5lB3KNfalVAKPYxTlQY6mma/fiwTNS5ilEVD7ZLiFkI93YZqVt2nA==
-  dependencies:
-    "@axon/log" "*"
-    moment "2.29.1"
-
-"@axon/validator@^1.0.1-43175.0":
-  version "1.0.1-43175.0"
-  resolved "https://nexus.taservs.net/repository/npm-all/@axon/validator/-/validator-1.0.1-43175.0.tgz#43be7fc33a3716bf4671652bdc182018618b3fd8"
-  integrity sha512-xxr1CUWW8FjKMcyVGbIc6bNe64Bm6XewPfF8TH9lIkv1HjDerlTneexlHnq3tdV92ziXD9WFcnmhBCnzaedLAA==
-  dependencies:
-    "@axon/log" "1.1.5-43175.0"
-    moment "2.29.1"
-
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.16.0", "@babel/code-frame@^7.16.7", "@babel/code-frame@^7.8.3":
   version "7.16.7"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.16.7.tgz#44416b6bd7624b998f5b1af5d470856c40138789"
@@ -1830,11 +1775,6 @@
     "@types/qs" "*"
     "@types/serve-static" "*"
 
-"@types/fast-json-stable-stringify@2.0.0":
-  version "2.0.0"
-  resolved "https://nexus.taservs.net/repository/npm-all/@types/fast-json-stable-stringify/-/fast-json-stable-stringify-2.0.0.tgz#40363bb847cb86b2c2e1599f1398d11e8329c921"
-  integrity sha512-mky/O83TXmGY39P1H9YbUpjV6l6voRYlufqfFCvel8l1phuy8HRjdWc1rrPuN53ITBJlbyMSV6z3niOySO5pgQ==
-
 "@types/graceful-fs@^4.1.2":
   version "4.1.5"
   resolved "https://registry.yarnpkg.com/@types/graceful-fs/-/graceful-fs-4.1.5.tgz#21ffba0d98da4350db64891f92a9e5db3cdb4e15"
@@ -1901,11 +1841,6 @@
   resolved "https://registry.yarnpkg.com/@types/mime/-/mime-1.3.2.tgz#93e25bf9ee75fe0fd80b594bc4feb0e862111b5a"
   integrity sha512-YATxVxgRqNH6nHEIsvg6k2Boc1JHI9ZbH5iWFFv/MTkchz3b1ieGDa5T0a9RznNdI0KhVbdbWSN+KWWrQZRxTw==
 
-"@types/mixpanel-browser@^2.35.4":
-  version "2.36.0"
-  resolved "https://nexus.taservs.net/repository/npm-all/@types/mixpanel-browser/-/mixpanel-browser-2.36.0.tgz#7d46fc51d7f22d1d09d5521404d156a96a54f306"
-  integrity sha512-aEuQOhK8rEE8TtUbF19H9z/pEYz1xg3/1fpu9qufXpqsR/PHLc1QnrO21BFwHmFytOFaRwEgCPqUhpy/rfIWIA==
-
 "@types/node@*":
   version "17.0.12"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.12.tgz#f7aa331b27f08244888c47b7df126184bc2339c5"
@@ -1961,14 +1896,6 @@
     "@types/prop-types" "*"
     "@types/scheduler" "*"
     csstype "^3.0.2"
-
-"@types/react@16.9.16":
-  version "16.9.16"
-  resolved "https://nexus.taservs.net/repository/npm-all/@types/react/-/react-16.9.16.tgz#4f12515707148b1f53a8eaa4341dae5dfefb066d"
-  integrity sha512-dQ3wlehuBbYlfvRXfF5G+5TbZF3xqgkikK7DWAsQXe2KnzV+kjD4W2ea+ThCrKASZn9h98bjjPzoTYzfRqyBkw==
-  dependencies:
-    "@types/prop-types" "*"
-    csstype "^2.2.0"
 
 "@types/resolve@1.17.1":
   version "1.17.1"
@@ -2815,11 +2742,6 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
 
-bowser@^2.9.0:
-  version "2.11.0"
-  resolved "https://nexus.taservs.net/repository/npm-all/bowser/-/bowser-2.11.0.tgz#5ca3c35757a7aa5771500c70a73a9f91ef420a8f"
-  integrity sha512-AlcaJBi/pqqJBIQ8U9Mcpc9i8Aqxn88Skv5d+xBX006BY5u8N3mGLHa5Lgppa7L/HfwgwLgZ6NYs+Ag6uUmJRA==
-
 brace-expansion@^1.1.7:
   version "1.1.11"
   resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.11.tgz#3c7fcbf529d87226f3d2f52b966ff5271eb441dd"
@@ -3461,11 +3383,6 @@ cssstyle@^2.3.0:
   integrity sha512-AZL67abkUzIuvcHqk7c09cezpGNcxUxU4Ioi/05xHk4DQeTkWmGYftIE6ctU6AEt+Gn4n1lDStOtj7FKycP71A==
   dependencies:
     cssom "~0.3.6"
-
-csstype@^2.2.0:
-  version "2.6.21"
-  resolved "https://nexus.taservs.net/repository/npm-all/csstype/-/csstype-2.6.21.tgz#2efb85b7cc55c80017c66a5ad7cbd931fda3a90e"
-  integrity sha512-Z1PhmomIfypOpoMjRQB70jfvy/wxT50qW08YXO5lMIJkrdq4yOTR+AW7FqutScmB9NkLwxo+jU+kZLbofZZq/w==
 
 csstype@^3.0.2:
   version "3.0.10"
@@ -4273,11 +4190,6 @@ fast-glob@^3.2.11, fast-glob@^3.2.9:
     glob-parent "^5.1.2"
     merge2 "^1.3.0"
     micromatch "^4.0.4"
-
-fast-json-stable-stringify@2.0.0:
-  version "2.0.0"
-  resolved "https://nexus.taservs.net/repository/npm-all/fast-json-stable-stringify/-/fast-json-stable-stringify-2.0.0.tgz#d5142c0caee6b1189f87d3a76111064f86c8bbf2"
-  integrity sha512-eIgZvM9C3P05kg0qxfqaVU6Tma4QedCPIByQOcemV0vju8ot3cS2DpHi4m2G2JvbSMI152rjfLX0p1pkSdyPlQ==
 
 fast-json-stable-stringify@^2.0.0, fast-json-stable-stringify@^2.1.0:
   version "2.1.0"
@@ -6087,27 +5999,12 @@ minimist@^1.1.1, minimist@^1.2.0, minimist@^1.2.5:
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
   integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
 
-mixpanel-browser@2.25.0:
-  version "2.25.0"
-  resolved "https://nexus.taservs.net/repository/npm-all/mixpanel-browser/-/mixpanel-browser-2.25.0.tgz#ae0e77388f786ee68376fd156ade422384596720"
-  integrity sha512-Ra9zsD9ymU+DGbp6GCXdzC/gPsGLQoKpNZ9OBKfG94i18mhQYNREmC/QeuS+LKNy4BGRBorTm87AwUglzsqIzQ==
-
-mixpanel-browser@^2.35.4:
-  version "2.43.0"
-  resolved "https://nexus.taservs.net/repository/npm-all/mixpanel-browser/-/mixpanel-browser-2.43.0.tgz#a4d4f97f5a7ca85411697ef70fa833177e67eb95"
-  integrity sha512-6zOjFXaRRWYo7YdcBwa9Z6nk9zRkkxPd9Qa/KNRcjSJ0OkMv7ka/p8rR+6VqMeY93pia/7X31c/HU5YhqAXnEQ==
-
 mkdirp@^0.5.5, mkdirp@~0.5.1:
   version "0.5.5"
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.5.tgz#d91cefd62d1436ca0f41620e251288d420099def"
   integrity sha512-NKmAlESf6jMGym1++R0Ra7wvhV+wFW63FaSOFPwRahvea0gMUcGUhVeAg/0BC0wiv9ih5NYPB1Wn1UEI1/L+xQ==
   dependencies:
     minimist "^1.2.5"
-
-moment@2.29.1:
-  version "2.29.1"
-  resolved "https://nexus.taservs.net/repository/npm-all/moment/-/moment-2.29.1.tgz#b2be769fa31940be9eeea6469c075e35006fa3d3"
-  integrity sha512-kHmoybcPV8Sqy59DwNDY3Jefr64lK/by/da0ViFcuA4DH0vQg5Q6Ze5VimxkfQNSC+Mls/Kx53s7TjP1RhFEDQ==
 
 ms@2.0.0:
   version "2.0.0"
@@ -6194,11 +6091,6 @@ normalize-url@^6.0.1:
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-6.1.0.tgz#40d0885b535deffe3f3147bec877d05fe4c5668a"
   integrity sha512-DlL+XwOy3NxAQ8xuC0okPgK46iuVNAK01YN7RueYBqqFeGsBjV9XmCAzAdgt+667bCl5kPh9EqKKDwnaPG1I7A==
-
-normalizr@3.3.0:
-  version "3.3.0"
-  resolved "https://nexus.taservs.net/repository/npm-all/normalizr/-/normalizr-3.3.0.tgz#6f44b95e8bf2201845a9e551920c4e5861166d27"
-  integrity sha512-u8Us8Ms5KpY0mmNwML4OBxNKvlmSKeXfPBIXU9XmcejrZUjhIvUOd8RYBq62UL4JHxrcO4wqo2sL4s8B74Hadw==
 
 npm-run-path@^4.0.1:
   version "4.0.1"
@@ -7218,16 +7110,6 @@ range-parser@^1.2.1, range-parser@~1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.1.tgz#3cf37023d199e1c24d1a55b84800c2f3e6468031"
   integrity sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg==
-
-raven-js@3.27.0:
-  version "3.27.0"
-  resolved "https://nexus.taservs.net/repository/npm-all/raven-js/-/raven-js-3.27.0.tgz#9f47c03e17933ce756e189f3669d49c441c1ba6e"
-  integrity sha512-vChdOL+yzecfnGA+B5EhEZkJ3kY3KlMzxEhShKh6Vdtooyl0yZfYNFQfYzgMf2v4pyQa+OTZ5esTxxgOOZDHqw==
-
-raven-js@3.27.2:
-  version "3.27.2"
-  resolved "https://nexus.taservs.net/repository/npm-all/raven-js/-/raven-js-3.27.2.tgz#6c33df952026cd73820aa999122b7b7737a66775"
-  integrity sha512-mFWQcXnhRFEQe5HeFroPaEghlnqy7F5E2J3Fsab189ondqUzcjwSVi7el7F36cr6PvQYXoZ1P2F5CSF2/azeMQ==
 
 raw-body@2.4.2:
   version "2.4.2"
@@ -8403,11 +8285,6 @@ type-detect@4.0.8:
   resolved "https://registry.yarnpkg.com/type-detect/-/type-detect-4.0.8.tgz#7646fb5f18871cfbb7749e69bd39a6388eb7450c"
   integrity sha512-0fr/mIH1dlO+x7TlcMy+bIDqKPsw/70tVyeHW787goQjhmqaZe10uwLujubK9q9Lg6Fiho1KUKDYz0Z7k7g5/g==
 
-type-fest@0.8.1:
-  version "0.8.1"
-  resolved "https://nexus.taservs.net/repository/npm-all/type-fest/-/type-fest-0.8.1.tgz#09e249ebde851d3b1e48d27c105444667f17b83d"
-  integrity sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==
-
 type-fest@^0.16.0:
   version "0.16.0"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.16.0.tgz#3240b891a78b0deae910dbeb86553e552a148860"
@@ -8539,11 +8416,6 @@ utils-merge@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
-
-uuid@3.3.3:
-  version "3.3.3"
-  resolved "https://nexus.taservs.net/repository/npm-all/uuid/-/uuid-3.3.3.tgz#4568f0216e78760ee1dbf3a4d2cf53e224112866"
-  integrity sha512-pW0No1RGHgzlpHJO1nsVrHKpOEIxkGg1xB+v0ZmdNH5OAeAwzAVrCnI2/6Mtx+Uys6iaylxa+D3g4j63IKKjSQ==
 
 uuid@^8.3.2:
   version "8.3.2"
