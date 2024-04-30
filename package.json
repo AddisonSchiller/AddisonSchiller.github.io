@@ -2,7 +2,7 @@
   "name": "schema-differ-merger",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://addisonschiller.github.io/schemadiff",
+  "homepage": "https://addisonschiller.github.io",
   "dependencies": {
     "@codemirror/lang-json": "^6.0.1",
     "@testing-library/jest-dom": "^5.14.1",
