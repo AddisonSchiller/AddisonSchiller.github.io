@@ -4,7 +4,7 @@ import prettier from 'prettier'
 import parserBabel from 'prettier/parser-babel'
 import CodeMirror from '@uiw/react-codemirror'
 import { json } from '@codemirror/lang-json'
-import {walkDataSchema} from './utils'
+import {walkJsonSchema7} from './utils'
 
 
 
@@ -85,12 +85,12 @@ export function App() {
   const diffSchemas = ()=>{
     const schema1Map: any = {}
     const schema2Map: any = {}
-    walkDataSchema({dataSchema:JSON.parse(schema1), walk: ({dataRef, subschema}:{dataRef:string, subschema: any}): boolean=>{
+    walkJsonSchema7({dataSchema:JSON.parse(schema1), walk: ({dataRef, subschema}:{dataRef:string, subschema: any}): boolean=>{
       schema1Map[dataRef] = subschema
       return true
     }})
 
-    walkDataSchema({dataSchema:JSON.parse(schema2), walk: ({dataRef, subschema}:{dataRef:string, subschema: any}): boolean=>{
+    walkJsonSchema7({dataSchema:JSON.parse(schema2), walk: ({dataRef, subschema}:{dataRef:string, subschema: any}): boolean=>{
       schema2Map[dataRef] = subschema
       
       
@@ -130,6 +130,54 @@ export function App() {
     setDiffs(schemaDiffs.join('\n'))    
     }
 
+    const mergeSchemas = ()=>{
+      const schema1Map: any = {}
+      const schema2Map: any = {}
+      walkJsonSchema7({dataSchema:JSON.parse(schema1), walk: ({dataRef, subschema}:{dataRef:string, subschema: any}): boolean=>{
+        schema1Map[dataRef] = subschema
+        return true
+      }})
+  
+      walkJsonSchema7({dataSchema:JSON.parse(schema2), walk: ({dataRef, subschema}:{dataRef:string, subschema: any}): boolean=>{
+        schema2Map[dataRef] = subschema
+        
+        
+        return true
+      }})
+      const uniqueKeys = uniq([...keys(schema1Map), ...keys(schema2Map)])
+      const schemaDiffs: string[] = []
+      uniqueKeys.forEach(dataRef =>{
+        const s1 = schema1Map[dataRef]
+        const s2 = schema2Map[dataRef]
+        if(!s1){
+          schemaDiffs.push(`missing dataRef ${dataRef} in first schema`)
+          return
+        }
+        if(!s2){
+          schemaDiffs.push(`missing dataRef ${dataRef} in second schema`)
+          return
+        }
+  
+        if(JSON.stringify(s1.type) !== JSON.stringify(s2.type)){
+          
+          schemaDiffs.push(`${dataRef} has conflicting types: ${s1.type} and ${s2.type}`)
+          
+        }
+        if((s1.enum && !s2.enum) || (s2.enum && !s1.enum)){
+          schemaDiffs.push(`${dataRef} has conflicting types. One is an Enum and one is not`)
+          return
+        }
+        if(s1.enum && s2.enum){
+          if(JSON.stringify(sortedUniq(s1.enum)) !== JSON.stringify(sortedUniq(s2.enum))){
+            schemaDiffs.push(`${dataRef} differing enums`)
+          }
+        }
+  
+      })
+  
+      setDiffs(schemaDiffs.join('\n'))    
+      }
+  
 
 
   const handleBlur = () => {
@@ -214,6 +262,13 @@ export function App() {
         >
           Diff
         </button>
+
+        <button
+          style={{ alignSelf: 'flex-start', marginTop: 16, marginLeft: 16 }}
+          onClick={mergeSchemas}
+        >
+          Diff
+        </button>
       </div>
 
       {schema2Error && <p style={{ color: 'red' }}>Error processing schema2</p>}
@@ -221,7 +276,7 @@ export function App() {
 
       <div>
           <label style={{ display: 'block' }} htmlFor="diffs">
-            Diffs
+            Diffs/Merged Schema
           </label>
           <CodeMirror
             id="diffs"
