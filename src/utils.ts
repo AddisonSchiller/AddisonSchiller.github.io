@@ -94,7 +94,10 @@ function doubleWalkerMerger(schema1: any, schema2: any, dataRef?: string) {
 
   if (enum1 && enum2) {
     schema1.enum = sortedUniq(sortBy([...enum1, ...enum2]));
-    merge(schema1.$enumMeta, schema2.$enumMeta);
+    if (!schema1.$enumMeta) {
+      schema1.$enumMeta = {};
+    }
+    merge(schema1.$enumMeta, schema2.$enumMeta || {});
     return;
   }
 
